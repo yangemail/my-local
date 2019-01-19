@@ -80,7 +80,7 @@ $(function() {
 		<div class="biankuang biankuang_2"></div>
 		<div class="biankuang biankuang_3"></div>
 		<div class="biankuang biankuang_4"></div>
-        <a class="tssjImg" href="${a.url}"><img src="${a.typeImg!site.defImg}"></a>
+        <a class="tssjImg" href="${a.url}"><img src="${base}${a.typeImg!site.defImg}"></a>
         <h1><a href="${a.url}">[@text_cut s=a.title len=titLen append='...'/]</a></h1>
         <p>${a.date?string(dateFormat)}</p>        
       </div>

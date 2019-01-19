@@ -46,7 +46,7 @@ Cms.siteFlow("${base}", location.href, document.referrer,"${site.config.flowSwit
           <li>
           [@cms_content id=content.id next='1' channelId=channel.id]
           [#if tag_bean??]
-           <a href="${tag_bean.url}"><img src="${tag_bean.typeImg!}" /></a>
+           <a href="${tag_bean.url}"><img src="${base}${tag_bean.typeImg!}" /></a>
            <div class="imgdivtext"> <a href="${tag_bean.url}" title="${tag_bean.title}">上一图集</a> </div>
           [#else]
            <a><img src="/${res}/images/no-pic.png" /></a>
@@ -57,7 +57,7 @@ Cms.siteFlow("${base}", location.href, document.referrer,"${site.config.flowSwit
           <li>
            [@cms_content id=content.id next='0' channelId=channel.id]
           [#if tag_bean??]
-           <a href="${tag_bean.url}"><img src="${tag_bean.typeImg!}" /></a>
+           <a href="${tag_bean.url}"><img src="${base}${tag_bean.typeImg!}" /></a>
            <div class="imgdivtext"> <a href="${tag_bean.url}" title="${tag_bean.title}">下一图集</a> </div>
           [#else]
            <a><img src="/${res}/images/no-pic.png" /></a>
@@ -134,7 +134,7 @@ Cms.siteFlow("${base}", location.href, document.referrer,"${site.config.flowSwit
         <div class="picshowlist_left">
           [@cms_content id=content.id next='1' channelId=channel.id]
           [#if tag_bean??]
-          <div class="picleftimg"> <a href="${tag_bean.url}"><img src="${tag_bean.typeImg!}" /></a> </div>
+          <div class="picleftimg"> <a href="${tag_bean.url}"><img src="${base}${tag_bean.typeImg!}" /></a> </div>
           <div class="piclefttxt"> <a href="${tag_bean.url}">${tag_bean.title}</a> </div>
           [#else]
           <div class="picleftimg"> <a><img src="/${res}/images/no-pic.png" /></a> </div>
@@ -147,7 +147,7 @@ Cms.siteFlow("${base}", location.href, document.referrer,"${site.config.flowSwit
           <div class="picmidmid">
             <ul>
             [#list content.pictures as p]
-              <li><a href="javascript:void(0);"><img src="${p.imgPath!}" alt="" bigimg="${p.imgPath!}" text="${p.description!}" /></a></li>
+              <li><a href="javascript:void(0);"><img src="${base}${p.imgPath!}" alt="" bigimg="${base}${p.imgPath!}" text="${p.description!}" /></a></li>
             [/#list]
             </ul>
           </div>
