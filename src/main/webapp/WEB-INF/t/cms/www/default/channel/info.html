@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>分类信息 - DGMPS地方门户网站V9 2018全新版本</title>
+<meta name="keywords" content="地方门户,PHP门户系统,2018版,PHP地方门户网站,DGMPSv9演示站">
+<meta name="description"
+	content="DGMPS V9 2018全新版本官方演示站点。DGMPS V9基于PHP/MYSQL开发，高效开源，专业的地方门户网站管理系统。">
+<meta name="generator" content="DGMPS V9" />
+<meta name="copyright" content="2017 www.dgmps.com" />
+<link href="/${res}/css/classified2013.css" type="text/css"
+	rel="stylesheet" />
+<link href="/${res}/css/g2013.css" type="text/css" rel="stylesheet" />
+<link href="/${res}/css/common2013.css" type="text/css" rel="stylesheet" />
+<link href="/${res}/css/head_8.css" type="text/css" rel="stylesheet" />
+<script src="/${res}/js/jquery-1.10.2.min.js"></script>
+<script src="/${res}/js/common2013.js"></script>
+<link rel="alternate" media="only screen and(max-width: 640px)"
+	href="https://mh.dgmps.com/index.php?m=wap&a=lists&typeid=0&catid=65&siteid=1&page=1">
+<script type="text/javascript">
+	uaredirect("https://mh.dgmps.com/index.php?m=wap&a=lists&typeid=0&catid=65&siteid=1&page=1");
+</script>
+<script src="/${res}/js/head8.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		if (window.location.toString().indexOf('pref=padindex') != -1) {
+		} else {
+			if (/AppleWebKit.*Mobile/i.test(navigator.userAgent)
+					|| (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/
+							.test(navigator.userAgent))) {
+				if (window.location.href.indexOf("?mobile") < 0) {
+					try {
+						if (/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i
+								.test(navigator.userAgent)) {
+							window.location.href = "https://m.00769.com.cn/index.php?m=wap";
+						} else if (/iPad/i.test(navigator.userAgent)) {
+						} else {
+						}
+					} catch (e) {
+					}
+				}
+			}
+		}
+	</script>
+	<div class="wrapper">
+		<div class="public-top-layout">
+			<div class="topbar w-1200">
+				<div class="user-entry">
+					<img src="/${res}/picture/icon.png"> <a
+						href="https://mh.dgmps.com/mobile/" class="display1"
+						target="_blank">手机客户端</a><span></span> <a
+						href="javascript:void(0);"
+						onClick="window.external.AddFavorite('https://mh.dgmps.com/','DGMPS地方门户网站V9 2018全新版本');return false;">收藏本站</a><span></span>
+					<a href="http://www.dgmps.com/v9/buy.html" target="_blank">购买系统</a><span></span>
+					<a href="http://v9.dgmps.com/demo.html" target="_blank"
+						style="color: #F00">更多风格</a>
+				</div>
+				<div class="quick-menu login_info" id="login_info">
+					<script>
+						jQuery(document).ready(
+								function() {
+									is_login3("https://mh.dgmps.com/", '1',
+											'1', '1', location.href);
+								});
+					</script>
+					<dl>
+						<dt class="zn">
+							<a href="https://mh.dgmps.com/jifen/" target="_blank">积分商城</a>
+						</dt>
+					</dl>
+					<dl class="xian"></dl>
+					<dl class="long">
+						<dt>
+							<a href="javascript:void(0);">我的中心</a><i></i>
+						</dt>
+						<dd>
+							<ul>
+								<li><a
+									href="https://mh.dgmps.com/index.php?m=member&c=index&a=account_manage&siteid=1">基本资料</a></li>
+								<li><a
+									href="https://mh.dgmps.com/index.php?m=pay&c=spend_list&a=init">现金明细</a></li>
+								<li><a
+									href="https://mh.dgmps.com/index.php?m=pay&c=deposit&a=init">积分明细</a></li>
+								<li><a
+									href="https://mh.dgmps.com/index.php?m=message&c=index">站内短信</a></li>
+								<li><a
+									href="https://mh.dgmps.com/index.php?m=member&c=index&a=favorite">我的收藏</a></li>
+								<li><a
+									href="https://mh.dgmps.com/index.php?m=member&c=index&a=account_manage_upgrade">会员升级</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="xian"></dl>
+					<dl class="long">
+						<dt>
+							<a href="javascript:void(0);">商家管理</a><i></i>
+						</dt>
+						<dd>
+							<ul>
+								<li><a
+									href="https://mh.dgmps.com/index.php?m=yp&c=business&a=register&siteid=1">免费加盟</a></li>
+								<li><a
+									href="https://mh.dgmps.com/index.php?m=yp&c=business&a=company">商家信息</a></li>
+								<li><a
+									href="https://mh.dgmps.com/index.php?m=yp&c=business&a=company&action=logo">商家设置</a></li>
+								<li><a
+									href="https://mh.dgmps.com/index.php?m=yp&c=business&a=content&action=list&modelid=30">招聘管理</a></li>
+								<li><a
+									href="https://mh.dgmps.com/index.php?m=yp&c=business&a=guestbook&status=0">留言管理</a></li>
+								<li><a
+									href="https://mh.dgmps.com/index.php?m=yp&c=business&a=pay">订单管理</a>
+									</dt>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="xian"></dl>
+					<dl class="long">
+						<dt>
+							<a href="javascript:void(0);">快速发布</a><i></i>
+						</dt>
+						<dd>
+							<p>
+								<a
+									href="https://mh.dgmps.com/index.php?m=member&c=content&a=info_publish&siteid=1"
+									target="_blank">分类信息</a>
+							</p>
+							<p>
+								<a
+									href="https://mh.dgmps.com/index.php?m=member&c=content&a=publish&siteid=1"
+									target="_blank">新闻投稿</a>
+							</p>
+							<p>
+								<a
+									href="https://mh.dgmps.com/index.php?m=member&c=content&a=publish&catid=73&siteid=1"
+									target="_blank">求职简历</a>
+							</p>
+							<p>
+								<a
+									href="https://mh.dgmps.com/index.php?m=yp&c=business&a=content&action=add&modelid=30&siteid=1"
+									target="_blank">招聘信息</a>
+							</p>
+							<p>
+								<a
+									href="https://mh.dgmps.com/index.php?m=yp&c=business&a=content&action=add&modelid=28&siteid=1"
+									target="_blank">发布商品</a>
+							</p>
+							<p>
+								<a
+									href="https://mh.dgmps.com/index.php?m=member&c=content&a=publish&catid=81&siteid=1"
+									target="_blank">房屋出租</a>
+							</p>
+							<p>
+								<a
+									href="https://mh.dgmps.com/index.php?m=member&c=content&a=publish&catid=82&siteid=1"
+									target="_blank">房屋出售</a>
+							</p>
+						</dd>
+					</dl>
+					<dl class="xian"></dl>
+					<dl class="long">
+						<dt>
+							<a href="javascript:void(0);">网站导航</a><i></i>
+						</dt>
+						<dd>
+							<ul>
+								<li><a href="https://mh.dgmps.com/shop/" target="_self"
+									class="bold0">网购商城</a></li>
+								<li><a href="https://mh.dgmps.com/photo/" target="_blank">图片频道</a></li>
+								<li><a href="https://mh.dgmps.com/video/" target="_blank">视频频道</a></li>
+								<li><a href="https://mh.dgmps.com/360/" target="_blank">全景频道</a></li>
+								<li><a href="https://mh.dgmps.com/index.php?m=baozhi"
+									target="_blank">电子报刊</a></li>
+								<li><a href="https://mh.dgmps.com/index.php?m=map"
+									target="_blank">地图频道</a></li>
+								<li><a href="https://mh.dgmps.com/help/" target="_blank">帮助中心</a></li>
+								<li><a href="https://mh.dgmps.com/bbs/" target="_blank">生活社区</a></li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<!--header-->
+		<div class="header w-1200 clearfix">
+			<div class="logo fl">
+				<a href="https://mh.dgmps.com/"><img
+					src="/${res}/picture/logo.gif" alt="" /></a>
+			</div>
+			<div class="search fl">
+				<form id="searchform1" name="searchform1" method="get"
+					target="_blank" action="https://mh.dgmps.com/index.php">
+					<input type="hidden" name="m" value="search" /> <input
+						type="hidden" name="c" value="index" /> <input type="hidden"
+						name="a" value="init" /> <input type="hidden" name="siteid"
+						value="1" id="siteid" /> <input type="hidden" id="keyword_c"
+						name="typeid" value="2" />
+					<div class="nav_bbs" id="nav">
+						<p class="set">信息</p>
+						<ul class="keyword_new">
+							<li data-val="1">资讯</li>
+							<li data-val="2">信息</li>
+							<li data-val="54">招聘</li>
+							<li data-val="55">商品</li>
+							<li data-val="56">视频</li>
+							<li data-val="3">图片</li>
+						</ul>
+					</div>
+					<input type="text" name="q" class="search_text"
+						placeholder="请输入关键字" /> <input type="submit" value="搜索"
+						class="search_sub" />
+				</form>
+			</div>
+			<a
+				href="https://mh.dgmps.com/index.php?m=member&c=content&a=info_publish&siteid=1"
+				target="_blank" class="hea_bot">免费发布信息</a>
+		</div>
+		<!--nav-->
+		<div class="navWrap clearfix">
+			<div class="nav w-1200" id="channel_nav">
+				<ul>
+					<li><a href="https://mh.dgmps.com" target="_self"
+						class="bold0">首页</a></li>
+					<li><a href="https://mh.dgmps.com/info/" target="_self"
+						class="bold0">供求</a></li>
+					<li><a href="https://mh.dgmps.com/house/" target="_self"
+						class="bold0">房产</a></li>
+					<li><a href="https://mh.dgmps.com/job/" target="_self"
+						class="bold0">招聘</a></li>
+					<li><a href="https://mh.dgmps.com/shop/" target="_self"
+						class="bold0">商城</a></li>
+					<li><a href="https://mh.dgmps.com/kd.html" target="_self"
+						class="bold0">外卖</a></li>
+					<li><a href="https://mh.dgmps.com/company.html" target="_self"
+						class="bold0">店铺</a></li>
+					<li><a href="https://mh.dgmps.com/news/" target="_self"
+						class="bold0">资讯</a></li>
+					<li><a href="https://mh.dgmps.com/index.php?m=activity"
+						target="_self" class="bold0">活动</a></li>
+					<li><a href="https://mh.dgmps.com/life/" target="_self"
+						class="bold0">黄页</a></li>
+					<li><a href="https://mh.dgmps.com/zhuangxiu/" target="_blank"
+						class="bold0">装修</a></li>
+					<li><a href="https://mh.dgmps.com/index.php?m=ask"
+						target="_blank" class="bold0">问吧</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="content w-1200 clearfix">
+			<!--<div class="breadcrumb">您当前的位置：<a href="https://mh.dgmps.com">首页</a> > <a href="https://mh.dgmps.com/info/">分类信息</a> > </div>-->
+			<div class="site_crumb clearfix">
+				<span>当前位置：</span><a href="https://mh.dgmps.com">首页</a> > <a
+					href="https://mh.dgmps.com/info/">分类信息</a> > </span>
+			</div>
+			<div class="adv">
+				<img src="/${res}/picture/info.jpg" alt="" />
+			</div>
+			<div class="grid_j01 clearfix">
+				<div class="col_main" id="fixed_can">
+					<div class="mod_01">
+						<div class="hd clearfix">
+							<p class="left">筛选条件</p>
+							<p class="more right">
+								<!--今日新增：<em></em>-->
+								共找到符合条件的信息 <em id="total">0</em> 条 <a href="javascript:void(0);"
+									onClick="window.external.AddFavorite('https://mh.dgmps.com/info/','分类信息 - DGMPS地方门户网站V9 2018全新版本');return false;"
+									class="fav">添加到浏览器收藏夹</a>
+							</p>
+						</div>
+						<div class="bd">
+							<div class="filter">
+								<span class="t">区域：</span> <a class='selected'>全部</a> <a
+									href='https://mh.dgmps.com/index.php?m=content&c=index&a=lists&catid=65&zone=3362&day='>朝阳</a>
+								<a
+									href='https://mh.dgmps.com/index.php?m=content&c=index&a=lists&catid=65&zone=3370&day='>东城</a>
+							</div>
+							<div class="filter clearfix">
+								<span class="t">期限：</span><a
+									href="https://mh.dgmps.com/index.php?m=content&c=index&a=lists&catid=65&zone=0&day=0"
+									class="selected">不限</a><a
+									href="https://mh.dgmps.com/index.php?m=content&c=index&a=lists&catid=65&zone=0&day=3">三天内</a><a
+									href="https://mh.dgmps.com/index.php?m=content&c=index&a=lists&catid=65&zone=0&day=7">一周内</a><a
+									href="https://mh.dgmps.com/index.php?m=content&c=index&a=lists&catid=65&zone=0&day=30">一个月内</a><a
+									href="https://mh.dgmps.com/index.php?m=content&c=index&a=lists&catid=65&zone=0&day=90">三个月内</a><a
+									href="https://mh.dgmps.com/index.php?m=content&c=index&a=lists&catid=65&zone=0&day=180">六个月内</a><a
+									href="https://mh.dgmps.com/index.php?m=content&c=index&a=lists&catid=65&zone=0&day=365">一年内</a>
+							</div>
+							<div class="searchbars">
+								<form id="searchform1" name="searchform1" method="get"
+									target="_blank" action="https://mh.dgmps.com/index.php">
+									<input type="hidden" name="m" value="search" /> <input
+										type="hidden" name="c" value="index" /> <input type="hidden"
+										name="a" value="init" /> <input type="hidden" name="siteid"
+										value="1" id="siteid" /> <input type="hidden" id="typeid"
+										name="typeid" value="2" /> <input type="text" class="s_input"
+										name="q" id="q" placeholder="请输入关键字" value="" />
+									<button class="s_button" type="submit">搜索</button>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="filter_selected clearfix">
+						<div class="left inner">
+							<ul>
+								<li>已选条件：</li>
+							</ul>
+						</div>
+						<div class="right">
+							<a
+								href="https://mh.dgmps.com/index.php?m=member&c=content&a=info_publish&siteid=1"
+								class="btn" target="_blank">免费发布生活服务信息</a>
+						</div>
+					</div>
+					<div class="main_list">
+						<ul class="topic" id="live_list0">
+							<li><span class="a"><span class="floor floor_1"><em>1</em>F</span><a
+									href="https://mh.dgmps.com/info/love/" class="gray">交友征婚</a><a
+									href="https://mh.dgmps.com/info/love/marriage-14.html"
+									target="_blank" class="blue title"><font
+										style='font-weight: bold'><font color='#ff0000'>诚寻想创业或者想投资或者智慧善良的朋友</font></font></a><a
+									href="https://mh.dgmps.com/info/love/marriage/"
+									class="gray cat">征婚</a><s class="hf display0">0回复</s><s
+									class="sj display0">商家</s></span> <span class="b">东城</span> <span
+								class="c">06-27</span> <span class="d"><s class="dalei0"></s></span>
+							</li>
+							<li><span class="a"><span class="floor floor_2"><em>2</em>F</span><a
+									href="https://mh.dgmps.com/info/life/" class="gray">生活服务</a><a
+									href="https://mh.dgmps.com/info/life/huishou-13.html"
+									target="_blank" class="blue title"><font
+										style='font-weight: bold'><font color='#ff0000'>苹果笔记本上门安装Win7双系统,苹果电脑系列维修</font></font></a><a
+									href="https://mh.dgmps.com/info/life/huishou/" class="gray cat">二手回收</a><s
+									class="hf display0">0回复</s><s class="sj display0">商家</s></span> <span
+								class="b">CBD</span> <span class="c">06-04</span> <span
+								class="d"><s class="dalei0"></s></span></li>
+							<!--
+                      <li> <span class="a"><span class="floor floor_1"><em>1</em>F</span><a href="https://mh.dgmps.com/info/love/" class="gray">交友征婚</a><a href="https://mh.dgmps.com/info/love/marriage-14.html" target="_blank" class="blue title">诚寻想创业或者想投资或者智慧善良的朋友</a><a href="https://mh.dgmps.com/info/love/marriage/" class="gray cat">征婚</a><s class="hf display0">0回复</s><s class="sj display0">商家</s></span> <span class="b">东城</span> <span class="c">06-27</span> <span class="d"><s class="dalei1"></s></span> </li>
+                  <li> <span class="a"><span class="floor floor_2"><em>2</em>F</span><a href="https://mh.dgmps.com/info/life/" class="gray">生活服务</a><a href="https://mh.dgmps.com/info/life/huishou-13.html" target="_blank" class="blue title">苹果笔记本上门安装Win7双系统,苹果电脑系列维修</a><a href="https://mh.dgmps.com/info/life/huishou/" class="gray cat">二手回收</a><s class="hf display0">0回复</s><s class="sj display0">商家</s></span> <span class="b">CBD</span> <span class="c">06-04</span> <span class="d"><s class="dalei1"></s></span> </li>
+    -->
+						</ul>
+						<div class="tuiguang clearfix">
+							<div class="left">
+								<s class="dalei1 left"></s><s class="dalei0 left"></s>置顶推广效果将提升<span
+									class="yellow">10</span>倍以上 <a
+									href="https://mh.dgmps.com/index.php?m=member&c=content&a=published"
+									class="yellow" target="_blank">我要出现在上面</a>
+							</div>
+						</div>
+						<ul class="t">
+							<li><span class="a">信息主题</span> <span class="b">区域</span> <span
+								class="c">发布</span> <span class="d">发布时间</span></li>
+						</ul>
+						<ul id="live_list">
+							<div style="display: none" id="content_total">15</div>
+							<li data-index="1" data-live="0"><span class="a"> <a
+									href="https://mh.dgmps.com/info/love/interest-16.html"
+									target="_blank" class="img"><img
+										src="/${res}/picture/livelistnopic.gif" /></a> <a
+									href="https://mh.dgmps.com/info/love/interest-16.html"
+									target="_blank" class="title blue">诚信交友，本人自媒体发布人</a><s
+									class="hf display0"></s><s class="sj display1">商家</s>
+									<p>
+										<a href="https://mh.dgmps.com/info/love/" class="gray">交友征婚</a>
+										- <a href="https://mh.dgmps.com/info/love/interest/"
+											class="gray">兴趣交友</a>
+									</p>
+							</span> <span class="b">朝阳</span> <span class="c">扬州一号生活网</span> <span
+								class="d">09-25</span></li>
+							<li data-index="1" data-live="0"><span class="a"> <a
+									href="https://mh.dgmps.com/info/life/banjia-15.html"
+									target="_blank" class="img"><img
+										src="/${res}/picture/livelistnopic.gif" /></a> <a
+									href="https://mh.dgmps.com/info/life/banjia-15.html"
+									target="_blank" class="title blue">追风剑二搬家，专业20年</a><s
+									class="hf display0"></s><s class="sj display1">商家</s>
+									<p>
+										<a href="https://mh.dgmps.com/info/life/" class="gray">生活服务</a>
+										- <a href="https://mh.dgmps.com/info/life/banjia/"
+											class="gray">搬家</a>
+									</p>
+							</span> <span class="b">朝阳</span> <span class="c">zfje</span> <span
+								class="d">09-17</span></li>
+							<li data-index="1" data-live="0"><span class="a"> <a
+									href="https://mh.dgmps.com/info/love/marriage-14.html"
+									target="_blank" class="img"><img
+										src="/${res}/picture/thumb_120_90_20160530043303957.jpg" /></a> <a
+									href="https://mh.dgmps.com/info/love/marriage-14.html"
+									target="_blank" class="title blue">诚寻想创业或者想投资或者智慧善良的朋友</a><s
+									class="tu">2图</s><s class="hf display0"></s><s
+									class="sj display1">商家</s>
+									<p>
+										<a href="https://mh.dgmps.com/info/love/" class="gray">交友征婚</a>
+										- <a href="https://mh.dgmps.com/info/love/marriage/"
+											class="gray">征婚</a>
+									</p>
+							</span> <span class="b">东城</span> <span class="c">qq83896111</span> <span
+								class="d">06-27</span></li>
+							<li data-index="1" data-live="0"><span class="a"> <a
+									href="https://mh.dgmps.com/info/life/huishou-13.html"
+									target="_blank" class="img"><img
+										src="/${res}/picture/thumb_120_90_20160530042247983.jpg" /></a> <a
+									href="https://mh.dgmps.com/info/life/huishou-13.html"
+									target="_blank" class="title blue">苹果笔记本上门安装Win7双系统,苹果电脑系列维修</a><s
+									class="tu">2图</s><s class="hf display0"></s><s
+									class="sj display1">商家</s>
+									<p>
+										<a href="https://mh.dgmps.com/info/life/" class="gray">生活服务</a>
+										- <a href="https://mh.dgmps.com/info/life/huishou/"
+											class="gray">二手回收</a>
+									</p>
+							</span> <span class="b">CBD</span> <span class="c">yb88cn</span> <span
+								class="d">06-04</span></li>
+							<li data-index="1" data-live="0"><span class="a"> <a
+									href="https://mh.dgmps.com/info/life/banjia-12.html"
+									target="_blank" class="img"><img
+										src="/${res}/picture/thumb_120_90_20160530042049904.jpg" /></a> <a
+									href="https://mh.dgmps.com/info/life/banjia-12.html"
+									target="_blank" class="title blue">业空调维修安装移机加氟 太阳能安装维修</a><s
+									class="tu">2图</s><s class="hf display0"></s><s
+									class="sj display1">商家</s>
+									<p>
+										<a href="https://mh.dgmps.com/info/life/" class="gray">生活服务</a>
+										- <a href="https://mh.dgmps.com/info/life/banjia/"
+											class="gray">搬家</a>
+									</p>
+							</span> <span class="b">国贸</span> <span class="c">爱你</span> <span
+								class="d">04-26</span></li>
+							<li data-index="1" data-live="0"><span class="a"> <a
+									href="https://mh.dgmps.com/info/market/computer-11.html"
+									target="_blank" class="img"><img
+										src="/${res}/picture/thumb_120_90_20160530042526286.jpg" /></a> <a
+									href="https://mh.dgmps.com/info/market/computer-11.html"
+									target="_blank" class="title blue">尼康相机一部，便宜处理了</a><s
+									class="tu">2图</s><s class="hf display0"></s>
+									<p>
+										<a href="https://mh.dgmps.com/info/market/" class="gray">跳蚤市场</a>
+										- <a href="https://mh.dgmps.com/info/market/computer/"
+											class="gray">二手电脑/配件</a>
+									</p>
+							</span> <span class="b">东城</span> <span class="c">xiaowanyi</span> <span
+								class="d">11-17</span></li>
+							<li data-index="1" data-live="0"><span class="a"> <a
+									href="https://mh.dgmps.com/info/life/banjia-10.html"
+									target="_blank" class="img"><img
+										src="/${res}/picture/thumb_120_90_20160530041740569.jpg" /></a> <a
+									href="https://mh.dgmps.com/info/life/banjia-10.html"
+									target="_blank" class="title blue">晶之恋婚纱摄影厅—8588送1000元购物卡</a><s
+									class="tu">2图</s><s class="hf display0"></s>
+									<p>
+										<a href="https://mh.dgmps.com/info/life/" class="gray">生活服务</a>
+										- <a href="https://mh.dgmps.com/info/life/banjia/"
+											class="gray">搬家</a>
+									</p>
+							</span> <span class="b">东城</span> <span class="c">xiaowanyi</span> <span
+								class="d">11-17</span></li>
+							<li data-index="1" data-live="0"><span class="a"> <a
+									href="https://mh.dgmps.com/info/love/marriage-9.html"
+									target="_blank" class="img"><img
+										src="/${res}/picture/thumb_120_90_20160530043151638.jpg" /></a> <a
+									href="https://mh.dgmps.com/info/love/marriage-9.html"
+									target="_blank" class="title blue">诚心交友，要求真心</a><s class="tu">1图</s><s
+									class="hf display0"></s>
+									<p>
+										<a href="https://mh.dgmps.com/info/love/" class="gray">交友征婚</a>
+										- <a href="https://mh.dgmps.com/info/love/marriage/"
+											class="gray">征婚</a>
+									</p>
+							</span> <span class="b">CBD</span> <span class="c">ahmgleisky</span> <span
+								class="d">09-20</span></li>
+							<li data-index="1" data-live="0"><span class="a"> <a
+									href="https://mh.dgmps.com/info/love/marriage-8.html"
+									target="_blank" class="img"><img
+										src="/${res}/picture/thumb_120_90_20160530042930205.jpg" /></a> <a
+									href="https://mh.dgmps.com/info/love/marriage-8.html"
+									target="_blank" class="title blue">想和一个男生，24岁-29岁，去K歌</a><s
+									class="tu">2图</s><s class="hf display0"></s>
+									<p>
+										<a href="https://mh.dgmps.com/info/love/" class="gray">交友征婚</a>
+										- <a href="https://mh.dgmps.com/info/love/marriage/"
+											class="gray">征婚</a>
+									</p>
+							</span> <span class="b">CBD</span> <span class="c">ahmgleisky</span> <span
+								class="d">09-20</span></li>
+							<li data-index="1" data-live="0"><span class="a"> <a
+									href="https://mh.dgmps.com/info/life/banjia-7.html"
+									target="_blank" class="img"><img
+										src="/${res}/picture/thumb_120_90_20160530041319719.png" /></a> <a
+									href="https://mh.dgmps.com/info/life/banjia-7.html"
+									target="_blank" class="title blue">做网站,多年网站经验,承接各种网站开发</a><s
+									class="tu">2图</s><s class="hf display0"></s>
+									<p>
+										<a href="https://mh.dgmps.com/info/life/" class="gray">生活服务</a>
+										- <a href="https://mh.dgmps.com/info/life/banjia/"
+											class="gray">搬家</a>
+									</p>
+							</span> <span class="b">国贸</span> <span class="c">yangge</span> <span
+								class="d">05-21</span></li>
+							<li data-index="1" data-live="0"><span class="a"> <a
+									href="https://mh.dgmps.com/info/life/banjia-5.html"
+									target="_blank" class="img"><img
+										src="/${res}/picture/livelistnopic.gif" /></a> <a
+									href="https://mh.dgmps.com/info/life/banjia-5.html"
+									target="_blank" class="title blue">搬家测试分类信息</a><s
+									class="hf display0"></s><s class="sj display1">商家</s>
+									<p>
+										<a href="https://mh.dgmps.com/info/life/" class="gray">生活服务</a>
+										- <a href="https://mh.dgmps.com/info/life/banjia/"
+											class="gray">搬家</a>
+									</p>
+							</span> <span class="b">东城</span> <span class="c">郝宗信</span> <span
+								class="d">02-26</span></li>
+							<li data-index="1" data-live="0"><span class="a"> <a
+									href="https://mh.dgmps.com/info/life/banjia-4.html"
+									target="_blank" class="img"><img
+										src="/${res}/picture/livelistnopic.gif" /></a> <a
+									href="https://mh.dgmps.com/info/life/banjia-4.html"
+									target="_blank" class="title blue">专业搬家公司</a><s
+									class="hf display0"></s><s class="sj display1">商家</s>
+									<p>
+										<a href="https://mh.dgmps.com/info/life/" class="gray">生活服务</a>
+										- <a href="https://mh.dgmps.com/info/life/banjia/"
+											class="gray">搬家</a>
+									</p>
+							</span> <span class="b">国贸</span> <span class="c">admin</span> <span
+								class="d">02-25</span></li>
+							<li data-index="1" data-live="0"><span class="a"> <a
+									href="https://mh.dgmps.com/info/love/heterosexual-3.html"
+									target="_blank" class="img"><img
+										src="/${res}/picture/20140117063511142.jpg" /></a> <a
+									href="https://mh.dgmps.com/info/love/heterosexual-3.html"
+									target="_blank" class="title blue">出售徐工20吨震动压路机/徐工18/21静压压路机</a><s
+									class="tu">2图</s><s class="hf display0"></s><s
+									class="sj display1">商家</s>
+									<p>
+										<a href="https://mh.dgmps.com/info/love/" class="gray">交友征婚</a>
+										- <a href="https://mh.dgmps.com/info/love/heterosexual/"
+											class="gray">异性交友</a>
+									</p>
+							</span> <span class="b">朝阳</span> <span class="c">test</span> <span
+								class="d">01-17</span></li>
+							<li data-index="1" data-live="0"><span class="a"> <a
+									href="https://mh.dgmps.com/info/market/computer-2.html"
+									target="_blank" class="img"><img
+										src="/${res}/picture/20140117062657981.jpg" /></a> <a
+									href="https://mh.dgmps.com/info/market/computer-2.html"
+									target="_blank" class="title blue">卡迪奴海绵宝宝小学生书包减负双肩背包</a><s
+									class="hf display0"></s><s class="sj display1">商家</s>
+									<p>
+										<a href="https://mh.dgmps.com/info/market/" class="gray">跳蚤市场</a>
+										- <a href="https://mh.dgmps.com/info/market/computer/"
+											class="gray">二手电脑/配件</a>
+									</p>
+							</span> <span class="b">朝阳</span> <span class="c">test</span> <span
+								class="d">01-17</span></li>
+							<li data-index="1" data-live="0"><span class="a"> <a
+									href="https://mh.dgmps.com/info/life/banjia-1.html"
+									target="_blank" class="img"><img
+										src="/${res}/picture/20140117053706988.jpg" /></a> <a
+									href="https://mh.dgmps.com/info/life/banjia-1.html"
+									target="_blank" class="title blue">九堡四季青服装大市场4楼290号依梦缘店</a><s
+									class="hf display0"></s><s class="sj display1">商家</s>
+									<p>
+										<a href="https://mh.dgmps.com/info/life/" class="gray">生活服务</a>
+										- <a href="https://mh.dgmps.com/info/life/banjia/"
+											class="gray">搬家</a>
+									</p>
+							</span> <span class="b">东城</span> <span class="c">admin</span> <span
+								class="d">01-17</span></li>
+						</ul>
+						<div class="pageNavigation"></div>
+					</div>
+				</div>
+				<div class="col_sub">
+					<div id="fixed">
+						<div class="list_nav_2015" id="list_nav_2013">
+							<ul>
+								<li class="all"><a href="https://mh.dgmps.com/info/"
+									class="t">全部信息</a></li>
+								<li class="item"><span class="sp"><a
+										href="https://mh.dgmps.com/info/life/">生活服务</a><s
+										class="rights" onclick="showHide(this,'items66');"></s></span>
+									<ul id="items66" class="ul" style="display: none;">
+										<li><a href="https://mh.dgmps.com/info/life/"
+											data-id="66" id="s_66">全部</a></li>
+											
+										[@cms_channel_list parentId='97']
+										[#list tag_list as c]
+										<li>
+											<a href="${c.url}">${c.name}</a>
+										</li>
+										[/#list]
+										[/@cms_channel_list]
+										
+<!-- 										<li><a href="https://mh.dgmps.com/info/life/banjia/" -->
+<!-- 											data-id="8" id="s_8">搬家</a></li> -->
+<!-- 										<li><a href="https://mh.dgmps.com/info/life/jiazheng/" -->
+<!-- 											data-id="9" id="s_9">家政</a></li> -->
+<!-- 										<li><a href="https://mh.dgmps.com/info/life/baojie/" -->
+<!-- 											data-id="10" id="s_10">保洁清洗</a></li> -->
+<!-- 										<li><a href="https://mh.dgmps.com/info/life/guandao/" -->
+<!-- 											data-id="11" id="s_11">管道疏通</a></li> -->
+<!-- 										<li><a href="https://mh.dgmps.com/info/life/huishou/" -->
+<!-- 											data-id="12" id="s_12">二手回收</a></li> -->
+<!-- 										<li><a href="https://mh.dgmps.com/info/life/wuliu/" -->
+<!-- 											data-id="13" id="s_13">货运物流</a></li> -->
+<!-- 										<li><a href="https://mh.dgmps.com/info/life/kuaidi/" -->
+<!-- 											data-id="14" id="s_14">快递</a></li> -->
+<!-- 										<li><a href="https://mh.dgmps.com/info/life/lipin/" -->
+<!-- 											data-id="15" id="s_15">礼品/鲜花</a></li> -->
+<!-- 										<li><a href="https://mh.dgmps.com/info/life/fuwu/" -->
+<!-- 											data-id="16" id="s_16">便民服务</a></li> -->
+<!-- 										<li><a href="https://mh.dgmps.com/info/life/zuping/" -->
+<!-- 											data-id="17" id="s_17">租赁</a></li> -->
+									</ul></li>
+								<li class="item"><span class="sp"><a
+										href="https://mh.dgmps.com/info/market/">跳蚤市场</a><s
+										class="rights" onclick="showHide(this,'items18');"></s></span>
+									<ul id="items18" class="ul" style="display: none;">
+										<li><a href="https://mh.dgmps.com/info/market/"
+											data-id="18" id="s_18">全部</a></li>
+										<li><a href="https://mh.dgmps.com/info/market/computer/"
+											data-id="23" id="s_23">二手电脑/配件</a></li>
+										<li><a href="https://mh.dgmps.com/info/market/phone/"
+											data-id="24" id="s_24">二手手机</a></li>
+										<li><a href="https://mh.dgmps.com/info/market/number/"
+											data-id="25" id="s_25">手机号码</a></li>
+										<li><a href="https://mh.dgmps.com/info/market/digital/"
+											data-id="26" id="s_26">数码产品</a></li>
+										<li><a href="https://mh.dgmps.com/info/market/office/"
+											data-id="27" id="s_27">办公用品/设备</a></li>
+										<li><a href="https://mh.dgmps.com/info/market/jiadian/"
+											data-id="28" id="s_28">二手家电</a></li>
+										<li><a href="https://mh.dgmps.com/info/market/furniture/"
+											data-id="29" id="s_29">二手家具/家居</a></li>
+										<li><a href="https://mh.dgmps.com/info/market/toys/"
+											data-id="30" id="s_30">玩具/游戏机</a></li>
+										<li><a href="https://mh.dgmps.com/info/market/equipment/"
+											data-id="31" id="s_31">二手设备</a></li>
+										<li><a href="https://mh.dgmps.com/info/market/ershou/"
+											data-id="32" id="s_32">其它跳蚤信息</a></li>
+									</ul></li>
+								<li class="item"><span class="sp"><a
+										href="https://mh.dgmps.com/info/love/">交友征婚</a><s
+										class="rights" onclick="showHide(this,'items19');"></s></span>
+									<ul id="items19" class="ul" style="display: none;">
+										<li><a href="https://mh.dgmps.com/info/love/"
+											data-id="19" id="s_19">全部</a></li>
+										<li><a href="https://mh.dgmps.com/info/love/marriage/"
+											data-id="33" id="s_33">征婚</a></li>
+										<li><a
+											href="https://mh.dgmps.com/info/love/heterosexual/"
+											data-id="34" id="s_34">异性交友</a></li>
+										<li><a href="https://mh.dgmps.com/info/love/interest/"
+											data-id="35" id="s_35">兴趣交友</a></li>
+										<li><a href="https://mh.dgmps.com/info/love/fellow/"
+											data-id="36" id="s_36">同乡会</a></li>
+										<li><a href="https://mh.dgmps.com/info/love/skills/"
+											data-id="37" id="s_37">技能交换</a></li>
+										<li><a href="https://mh.dgmps.com/info/love/activities/"
+											data-id="38" id="s_38">驴友/活动/聚会</a></li>
+									</ul></li>
+								<li class="item"><span class="sp"><a
+										href="https://mh.dgmps.com/info/auto/">车辆买卖</a><s
+										class="rights" onclick="showHide(this,'items20');"></s></span>
+									<ul id="items20" class="ul" style="display: none;">
+										<li><a href="https://mh.dgmps.com/info/auto/"
+											data-id="20" id="s_20">全部</a></li>
+										<li><a href="https://mh.dgmps.com/info/auto/cusedcar/"
+											data-id="39" id="s_39">商家二手车</a></li>
+										<li><a href="https://mh.dgmps.com/info/auto/usedcar/"
+											data-id="40" id="s_40">二手汽车转让</a></li>
+										<li><a href="https://mh.dgmps.com/info/auto/zuche/"
+											data-id="41" id="s_41">租车</a></li>
+										<li><a href="https://mh.dgmps.com/info/auto/carpooling/"
+											data-id="42" id="s_42">拼车/顺风车</a></li>
+										<li><a href="https://mh.dgmps.com/info/auto/jiaxiao/"
+											data-id="43" id="s_43">代驾/陪练/驾校</a></li>
+										<li><a href="https://mh.dgmps.com/info/auto/decoration/"
+											data-id="44" id="s_44">汽车装饰</a></li>
+										<li><a href="https://mh.dgmps.com/info/auto/motorcycle/"
+											data-id="45" id="s_45">二手摩托车</a></li>
+										<li><a href="https://mh.dgmps.com/info/auto/bicycle/"
+											data-id="46" id="s_46">二手自行车/电动车</a></li>
+									</ul></li>
+								<li class="item"><span class="sp"><a
+										href="https://mh.dgmps.com/info/edu/">教育培训</a><s
+										class="rights" onclick="showHide(this,'items21');"></s></span>
+									<ul id="items21" class="ul" style="display: none;">
+										<li><a href="https://mh.dgmps.com/info/edu/" data-id="21"
+											id="s_21">全部</a></li>
+										<li><a href="https://mh.dgmps.com/info/edu/tutor/"
+											data-id="47" id="s_47">家教</a></li>
+										<li><a href="https://mh.dgmps.com/info/edu/preschool/"
+											data-id="48" id="s_48">早教/学前教育</a></li>
+										<li><a href="https://mh.dgmps.com/info/edu/schools/"
+											data-id="49" id="s_49">中小学教育</a></li>
+										<li><a href="https://mh.dgmps.com/info/edu/english/"
+											data-id="50" id="s_50">英语培训</a></li>
+										<li><a href="https://mh.dgmps.com/info/edu/language/"
+											data-id="51" id="s_51">小语种</a></li>
+										<li><a href="https://mh.dgmps.com/info/edu/occupation/"
+											data-id="52" id="s_52">职业培训</a></li>
+										<li><a href="https://mh.dgmps.com/info/edu/design/"
+											data-id="53" id="s_53">设计培训</a></li>
+										<li><a href="https://mh.dgmps.com/info/edu/sports/"
+											data-id="54" id="s_54">文艺/体育</a></li>
+										<li><a href="https://mh.dgmps.com/info/edu/musical/"
+											data-id="55" id="s_55">乐器培训</a></li>
+										<li><a href="https://mh.dgmps.com/info/edu/education/"
+											data-id="56" id="s_56">学历教育</a></li>
+										<li><a href="https://mh.dgmps.com/info/edu/mba/"
+											data-id="57" id="s_57">管理/MBA</a></li>
+										<li><a href="https://mh.dgmps.com/info/edu/train/"
+											data-id="58" id="s_58">其他培训</a></li>
+									</ul></li>
+								<li class="item"><span class="sp"><a
+										href="https://mh.dgmps.com/info/biz/">商务服务</a><s
+										class="rights" onclick="showHide(this,'items22');"></s></span>
+									<ul id="items22" class="ul" style="display: none;">
+										<li><a href="https://mh.dgmps.com/info/biz/" data-id="22"
+											id="s_22">全部</a></li>
+										<li><a href="https://mh.dgmps.com/info/biz/plan/"
+											data-id="59" id="s_59">设计策划</a></li>
+										<li><a href="https://mh.dgmps.com/info/biz/fanyi/"
+											data-id="60" id="s_60">翻译/速记</a></li>
+										<li><a href="https://mh.dgmps.com/info/biz/media/"
+											data-id="61" id="s_61">广告媒体</a></li>
+										<li><a href="https://mh.dgmps.com/info/biz/law/"
+											data-id="62" id="s_62">法律咨询</a></li>
+										<li><a href="https://mh.dgmps.com/info/biz/network/"
+											data-id="63" id="s_63">网络维护及布线</a></li>
+										<li><a href="https://mh.dgmps.com/info/biz/website/"
+											data-id="64" id="s_64">网站建设/推广</a></li>
+									</ul></li>
+							</ul>
+						</div>
+						<a
+							href="https://mh.dgmps.com/index.php?m=member&c=content&a=info_publish&siteid=1"
+							target="_blank" class="jisu_btn">极速发布信息</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+	<script src="/${res}/js/select.jquery.js"></script>
+	<script src="/${res}/js/dropdown2013.js"></script>
+	<script src="/${res}/js/api.js"></script>
+	<script>
+		$(document).ready(function() {
+			var content_total = $("#content_total").html();
+			$("#total").html(content_total);
+
+		});
+		$(function() {
+			$('#mySle').selectbox();
+			$(document).modCity();
+			$('#fabu').showMore();
+			$('#weixin').showMore();
+			$.returnTop();
+			$('#fixed').fixed($('#fixed_can'));
+			//$('#po_jisu').jisu();
+			//$('#live_list0').liveList();
+			//$('#live_list').liveList();
+			//$.companyUrl();
+		});
+	</script>
+	<div class="footWrap clearfix" id="footer">
+		<div class="foot_Top clearfix">
+			<div class="foot_box clearfix">
+				<div class="foot_TL">
+					<h2>客服电话</h2>
+					<span>13724538885</span>
+					<p>工作时间 周一至周六 8:00-17:30</p>
+					<b>客服QQ<a
+						href="http://wpa.qq.com/msgrd?v=3&uin=479185&site=qq&menu=yes"
+						target="_blank"><img src="/${res}/picture/button_11.gif"
+							alt="点击咨询"></a><a
+						href="http://wpa.qq.com/msgrd?v=3&uin=838981116&site=qq&menu=yes"
+						target="_blank"><img src="/${res}/picture/button_11.gif"
+							alt="点击咨询"></a></b>
+				</div>
+				<div class="foot_TM">
+					<dl>
+						<dt>购物</dt>
+						<dd>
+							<a href="https://mh.dgmps.com/index.php?m=tuan">省啦团购</a>
+						</dd>
+						<dd>
+							<a href="https://mh.dgmps.com/shop/">同城快店</a>
+						</dd>
+						<dd>
+							<a
+								href="https://mh.dgmps.com/index.php?m=yp&c=business&a=register">商家入驻</a>
+						</dd>
+						<dd>
+							<a href="https://mh.dgmps.com/index.php?m=yp&c=business&a=init">商家管理</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>供求</dt>
+						<dd>
+							<a href="https://mh.dgmps.com/info/market/">跳蚤市场</a>
+						</dd>
+						<dd>
+							<a href="https://mh.dgmps.com/info/love/">交友征婚</a>
+						</dd>
+						<dd>
+							<a href="https://mh.dgmps.com/info/biz/">商业服务</a>
+						</dd>
+						<dd>
+							<a href="https://mh.dgmps.com/info/life/">同城活动</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>房产</dt>
+						<dd>
+							<a href="https://mh.dgmps.com/house/building/">新楼盘</a>
+						</dd>
+						<dd>
+							<a href="https://mh.dgmps.com/house/sale/">二手房</a>
+						</dd>
+						<dd>
+							<a href="https://mh.dgmps.com/house/rent/">出租房</a>
+						</dd>
+						<dd>
+							<a href="https://mh.dgmps.com/index.php?m=member&c=agent">找中介</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>招聘</dt>
+						<dd>
+							<a href="https://mh.dgmps.com/job/zhiwei-1.html">找工作</a>
+						</dd>
+						<dd>
+							<a href="https://mh.dgmps.com/job/resume/">找人才</a>
+						</dd>
+						<dd>
+							<a
+								href="https://mh.dgmps.com/index.php?m=yp&c=business&a=content&action=add&modelid=30">发招聘</a>
+						</dd>
+						<dd>
+							<a
+								href="https://mh.dgmps.com/index.php?m=member&c=content&a=publish&catid=73">填简历</a>
+						</dd>
+					</dl>
+				</div>
+				<div class="foot_TR">
+					<div class="TR_LL">
+						<p>微信公众号</p>
+						<a href="javascript:void(0);"><img
+							src="/${res}/picture/weixin.jpg" alt="DGMPS" /></a>
+					</div>
+					<div class="TR_RR">
+						<p>APP客户端</p>
+						<a href="https://mh.dgmps.com/mobile/" target="_blank"><img
+							src="/${res}/picture/app.png"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="foot_Mid clearfix">
+			<div class="foot_MC">
+				<ul class="clearfix">
+					<li class="first"><a href="javascript:void(0);"
+						onclick='this.style.behavior="url(#default#homepage)"; this.setHomePage("https://mh.dgmps.com/");return false;'>设为首页</a></li>
+					<li><a href="javascript:void(0);"
+						onClick="window.external.AddFavorite('https://mh.dgmps.com/','DGMPS地方门户网站V9 2018全新版本');return false;">加为收藏</a></li>
+					<li><a href="https://mh.dgmps.com/about/aboutus/"
+						target="_blank">关于我们</a></li>
+					<li><a href="https://mh.dgmps.com/about/contactus/"
+						target="_blank">联系方式</a></li>
+					<li><a href="https://mh.dgmps.com/about/copyright/"
+						target="_blank">版权声明</a></li>
+					<li><a href="https://mh.dgmps.com/about/hr/" target="_blank">招聘信息</a></li>
+					<li><a href="https://mh.dgmps.com/index.php?m=link"
+						target="_blank">友情链接</a></li>
+					<li><a href="https://mh.dgmps.com/index.php?m=content&c=rss"
+						target="_blank">RSS订阅</a></li>
+					<li><a href="https://mh.dgmps.com/help/" target="_blank">帮助中心</a></li>
+					<li><a href="https://mh.dgmps.com/index.php?m=guestbook"
+						target="_blank">留言反馈</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="foot_Bot clearfix">
+			<p>
+				Copyright @ 2008-2018 www.dgmps.com All Right Reserved. Powered by <a
+					href="http://www.dgmps.com/" target="_blank">DGMPS</a> v9. <a
+					href="http://www.miitbeian.gov.cn" target="_blank">粤ICP备12068234号</a>
+			</p>
+		</div>
+	</div>
+	</div>
+	<div class="display0">
+		<script type="text/javascript">
+			var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://"
+					: " http://");
+			document
+					.write(unescape("%3Cscript src='"
+							+ _bdhmProtocol
+							+ "hm.baidu.com/h.js%3Fddee5900ab45334b6682015cd36b2031' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+
+	</div>
+</body>
+</html>
