@@ -249,8 +249,14 @@
 		<div class="content w-1200 clearfix">
 			<!--<div class="breadcrumb">您当前的位置：<a href="https://mh.dgmps.com">首页</a> > <a href="https://mh.dgmps.com/info/">分类信息</a> > </div>-->
 			<div class="site_crumb clearfix">
-				<span>当前位置：</span><a href="https://mh.dgmps.com">首页</a> > <a
-					href="https://mh.dgmps.com/info/">分类信息</a> > </span>
+				<span>当前位置：</span>
+				<a href="${base}/">首页</a> &gt; 
+				[#list channel.nodeList as n]
+					<a href="${n.url}" target="_blank">${n.name}</a>
+					[#if n_has_next] &gt; [/#if]
+				[/#list]
+<!-- 				<a href="https://mh.dgmps.com">首页</a> > <a -->
+<!-- 					href="https://mh.dgmps.com/info/">分类信息</a> > </span> -->
 			</div>
 			<div class="adv">
 				<img src="/${res}/picture/info.jpg" alt="" />
@@ -303,6 +309,13 @@
 						<div class="left inner">
 							<ul>
 								<li>已选条件：</li>
+								[#list channel.nodeList as n]
+								[#if n_index>0]
+								<li>
+									<a href="${n.url}">${n.name}</a>
+								</li>
+								[/#if]
+								[/#list]
 							</ul>
 						</div>
 						<div class="right">
@@ -351,6 +364,37 @@
 						</ul>
 						<ul id="live_list">
 							<div style="display: none" id="content_total">15</div>
+							
+							[@cms_content_page dateFormat='MM-dd' channelId=channel.id orderBy='2']
+							[#list tag_pagination.list as a]
+							<li data-index="1" data-live="0"><span class="a"> 
+								<a href="${a.url}" target="_blank" class="img">
+									[#if a.pictures!?size > 0]
+									[#list a.pictures as p]
+									[#if p_index==0]
+										<img src="${p.imgPath!}" />
+									[/#if]	
+									[/#list]
+									[/#if]
+								</a> <a
+									href="${a.url}"
+									target="_blank" class="title blue">${a.title}</a><s
+									class="tu">${a.pictures!?size}图</s><s
+									class="hf display0"></s><s class="sj display1">商家</s>
+									<p>
+										<a href="https://mh.dgmps.com/info/love/" class="gray">交友征婚</a>
+										- <a href="https://mh.dgmps.com/info/love/interest/"
+											class="gray">兴趣交友</a>
+									</p>
+							</span> <span class="b">朝阳</span> <span class="c">扬州一号生活网</span> <span
+								class="d">${a.date!?string(dateFormat)}</span></li>
+							[/#list]
+							[/@cms_content_page]
+							
+							
+							
+							
+							
 							<li data-index="1" data-live="0"><span class="a"> <a
 									href="https://mh.dgmps.com/info/love/interest-16.html"
 									target="_blank" class="img"><img
@@ -585,7 +629,7 @@
 										[@cms_channel_list parentId='97']
 										[#list tag_list as c]
 										<li>
-											<a href="${c.url}">${c.name}</a>
+											<a href="${c.url}" data-id="${c.id}" id="s_${c.id}">${c.name}</a>
 										</li>
 										[/#list]
 										[/@cms_channel_list]
