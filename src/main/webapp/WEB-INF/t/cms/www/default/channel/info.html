@@ -248,11 +248,11 @@
 		</div>
 		<div class="content w-1200 clearfix">
 			<!--<div class="breadcrumb">您当前的位置：<a href="https://mh.dgmps.com">首页</a> > <a href="https://mh.dgmps.com/info/">分类信息</a> > </div>-->
-			<div class="site_crumb clearfix">
-				<span>当前位置：</span>
+			<div class="breadcrumb">
+				<span>您当前的位置：</span>
 				<a href="${base}/">首页</a> &gt; 
 				[#list channel.nodeList as n]
-					<a href="${n.url}" target="_blank">${n.name}</a>
+					<a href="${n.url}" target="_blank">${n.title!n.name}</a>
 					[#if n_has_next] &gt; [/#if]
 				[/#list]
 <!-- 				<a href="https://mh.dgmps.com">首页</a> > <a -->
