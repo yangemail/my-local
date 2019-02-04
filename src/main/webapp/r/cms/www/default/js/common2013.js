@@ -111,9 +111,9 @@ function is_login3(siteUrl,hasQQ,hasWX,siteID,Forward){
 			loadWEBmessage();//��Ϣϵͳ
 		}else{
 			txt='<dl style="width:84px;">'+
-				'<dt>��ã�<a href="'+siteUrl+'index.php?m=member&c=index&a=login&siteid='+siteID+'&forward='+Forward+'" class="cur">���¼</a></dt>'+
+				'<dt>你好，<a href="'+siteUrl+'index.php?m=member&c=index&a=login&siteid='+siteID+'&forward='+Forward+'" class="cur">请登录</a></dt>'+
 			'</dl><dl>'+
-				'<dt class="zn"><a href="'+siteUrl+'index.php?m=member&c=index&a=register&siteid='+siteID+'">���ע��</a></dt>'+
+				'<dt class="zn"><a href="'+siteUrl+'index.php?m=member&c=index&a=register&siteid='+siteID+'">免费注册</a></dt>'+
 			'</dl><dl class="xian"></dl>'+qqImg+wxImg;
 			txt+="<input value=\"0\" id=\"isLogin\" type=\"hidden\" />";
 		}
