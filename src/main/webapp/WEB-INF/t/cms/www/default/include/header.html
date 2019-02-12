@@ -34,31 +34,67 @@ $(function() {
 	});
 });
 </script>
-<header class="header rel">
-  <div class="header-jf"><a class="jf-btn" name="gb2big5" id="gb2big5">繁</a></div>
-  <Script Language=Javascript Src="${resSys}/gb2big5.js"></Script>
-  <div class="header-rss"><a class="rss-btn" href="${base}/rss.jspx" target="_blank" title="RSS订阅">RSS</a></div>
-  <div class="header-tag"><a class="tag-btn" href="${base}/tag.jspx" target="_blank" title="Tags标签">Tags</a></div>
-  <div class="container clearfix">
-    <a class="logo" href="${base}/"></a>
-    [#include "../include/nav.html"]
-    <div class="header-r">     
-      <div class="search">
-        <form action="${base}/search.jspx" target="_blank" name="searchForm" id="searchForm">
-        <input type="text" name="q" value="${oldq!}"   maxlength="50" autocomplete="off" class="searchCon" style="width:202px;">
-        <input type="hidden" name="token" id="token" value="${token!}" />
-        <input type="button" value="" class="searchMenu" onclick="query()" >
-        </form>
-      </div>      
-      <div id="loginCsiDiv" style="float:left;"></div>
-	  <script type="text/javascript">
-		$(function(){
-			[#if site.config.ssoEnable]
-			Cms.loginSSO('${base}');
-			[/#if]
-		});
-	   </script>
-	   [#include "../csi/login_csi.html"]
-    </div> 
-  </div>
+
+<header>
+<div class="header w-1200 clearfix">
+			<div class="logo fl">
+				<a href="https://mh.dgmps.com/"><img
+					src="/${res}/picture/logo.gif" alt="" /></a>
+			</div>
+			<div class="search fl">
+		        <form action="${base}/search.jspx" target="_blank" name="searchForm" id="searchForm">
+		        	<div class="nav_bbs" id="nav">
+						<p class="set">信息</p>
+						<ul class="keyword_new">
+							<li data-val="1">资讯</li>
+							<li data-val="2">信息</li>
+							<li data-val="54">招聘</li>
+							<li data-val="55">商品</li>
+							<li data-val="56">视频</li>
+							<li data-val="3">图片</li>
+						</ul>
+					</div>
+			        <input type="text" name="q" value="${oldq!}"   maxlength="50" autocomplete="off" class="search_text" placeholder="请输入关键字">
+			        <input type="hidden" name="token" id="token" value="${token!}" />
+			        <input type="button" value="搜索" class="search_sub" onclick="query()" >
+		        </form>
+			
+<!-- 				<form id="searchform1" name="searchform1" method="get" -->
+<!-- 					target="_blank" action="https://mh.dgmps.com/index.php"> -->
+<!-- 					<input type="hidden" name="m" value="search" />  -->
+<!-- 					<input -->
+<!-- 						type="hidden" name="c" value="index" />  -->
+<!-- 					<input type="hidden" -->
+<!-- 						name="a" value="init" />  -->
+<!-- 					<input type="hidden" name="siteid" -->
+<!-- 						value="1" id="siteid" />  -->
+<!-- 					<input type="hidden" id="keyword_c" -->
+<!-- 						name="typeid" value="2" /> -->
+<!-- 					<div class="nav_bbs" id="nav"> -->
+<!-- 						<p class="set">信息</p> -->
+<!-- 						<ul class="keyword_new"> -->
+<!-- 							<li data-val="1">资讯</li> -->
+<!-- 							<li data-val="2">信息</li> -->
+<!-- 							<li data-val="54">招聘</li> -->
+<!-- 							<li data-val="55">商品</li> -->
+<!-- 							<li data-val="56">视频</li> -->
+<!-- 							<li data-val="3">图片</li> -->
+<!-- 						</ul> -->
+<!-- 					</div> -->
+<!-- 					<input type="text" name="q" class="search_text" -->
+<!-- 						placeholder="请输入关键字" /> <input type="submit" value="搜索" -->
+<!-- 						class="search_sub" /> -->
+<!-- 				</form> -->
+			</div>
+<!-- 			<a -->
+<!-- 				href="https://mh.dgmps.com/index.php?m=member&c=content&a=info_publish&siteid=1" -->
+<!-- 				target="_blank" class="hea_bot">免费发布信息</a> -->
+			<a href="${base}/member/contribute_add.jspx" target="_blank" class="hea_bot">免费发布信息</a>
+		</div>
+		
+		<!--nav-->
+		[#include "../include/nav.html"]
+		
 </header>
+
+

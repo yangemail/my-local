@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>分类信息 - DGMPS地方门户网站V9 2018全新版本</title>
-<meta name="keywords" content="地方门户,PHP门户系统,2018版,PHP地方门户网站,DGMPSv9演示站">
-<meta name="description"
-	content="DGMPS V9 2018全新版本官方演示站点。DGMPS V9基于PHP/MYSQL开发，高效开源，专业的地方门户网站管理系统。">
-<meta name="generator" content="DGMPS V9" />
+<title>${channel.title!channel.name} - ${site.name} - Powered by JEECMS</title>
+<meta http-equiv="keywords" content="${channel.keywords!}"/>
+<meta http-equiv="description" content="${channel.description!}"/>
+<script src="${resSys}/jquery.js" type="text/javascript"></script>
+<script src="${resSys}/front.js" type="text/javascript"></script>
+<link rel="stylesheet" href="${resSys}/font-awesome/css/font-awesome.min.css">
+<!-- <link type="text/css" rel="stylesheet" href="/${res}/css/index.css" /> -->
+
 <meta name="copyright" content="2017 www.dgmps.com" />
 <link href="/${res}/css/classified2013.css" type="text/css"
 	rel="stylesheet" />
 <link href="/${res}/css/g2013.css" type="text/css" rel="stylesheet" />
 <link href="/${res}/css/common2013.css" type="text/css" rel="stylesheet" />
 <link href="/${res}/css/head_8.css" type="text/css" rel="stylesheet" />
-<script src="/${res}/js/jquery-1.10.2.min.js"></script>
+<!-- <script src="/${res}/js/jquery-1.10.2.min.js"></script> -->
 <script src="/${res}/js/common2013.js"></script>
 <link rel="alternate" media="only screen and(max-width: 640px)"
 	href="https://mh.dgmps.com/index.php?m=wap&a=lists&typeid=0&catid=65&siteid=1&page=1">
@@ -21,6 +25,18 @@
 	uaredirect("https://mh.dgmps.com/index.php?m=wap&a=lists&typeid=0&catid=65&siteid=1&page=1");
 </script>
 <script src="/${res}/js/head8.js"></script>
+
+<!--[if lt IE 9]> 
+<script src="/${res}/js/html5shiv.min.js"></script>
+<script src="/${res}/js/respond.min.js"></script>
+
+<![endif]-->
+<script type="text/javascript">
+$(function() {
+	Cms.channelViewCount("${base}","${channel.id}");
+	Cms.siteFlow("${base}", location.href, document.referrer,"${site.config.flowSwitch?string}");
+});
+</script>
 </head>
 <body>
 	<script type="text/javascript">
@@ -44,208 +60,13 @@
 		}
 	</script>
 	<div class="wrapper">
-		<div class="public-top-layout">
-			<div class="topbar w-1200">
-				<div class="user-entry">
-					<img src="/${res}/picture/icon.png"> <a
-						href="https://mh.dgmps.com/mobile/" class="display1"
-						target="_blank">手机客户端</a><span></span> <a
-						href="javascript:void(0);"
-						onClick="window.external.AddFavorite('https://mh.dgmps.com/','DGMPS地方门户网站V9 2018全新版本');return false;">收藏本站</a><span></span>
-					<a href="http://www.dgmps.com/v9/buy.html" target="_blank">购买系统</a><span></span>
-					<a href="http://v9.dgmps.com/demo.html" target="_blank"
-						style="color: #F00">更多风格</a>
-				</div>
-				<div class="quick-menu login_info" id="login_info">
-					<script>
-						jQuery(document).ready(
-								function() {
-									is_login3("https://mh.dgmps.com/", '1',
-											'1', '1', location.href);
-								});
-					</script>
-					<dl>
-						<dt class="zn">
-							<a href="https://mh.dgmps.com/jifen/" target="_blank">积分商城</a>
-						</dt>
-					</dl>
-					<dl class="xian"></dl>
-					<dl class="long">
-						<dt>
-							<a href="javascript:void(0);">我的中心</a><i></i>
-						</dt>
-						<dd>
-							<ul>
-								<li><a
-									href="https://mh.dgmps.com/index.php?m=member&c=index&a=account_manage&siteid=1">基本资料</a></li>
-								<li><a
-									href="https://mh.dgmps.com/index.php?m=pay&c=spend_list&a=init">现金明细</a></li>
-								<li><a
-									href="https://mh.dgmps.com/index.php?m=pay&c=deposit&a=init">积分明细</a></li>
-								<li><a
-									href="https://mh.dgmps.com/index.php?m=message&c=index">站内短信</a></li>
-								<li><a
-									href="https://mh.dgmps.com/index.php?m=member&c=index&a=favorite">我的收藏</a></li>
-								<li><a
-									href="https://mh.dgmps.com/index.php?m=member&c=index&a=account_manage_upgrade">会员升级</a></li>
-							</ul>
-						</dd>
-					</dl>
-					<dl class="xian"></dl>
-					<dl class="long">
-						<dt>
-							<a href="javascript:void(0);">商家管理</a><i></i>
-						</dt>
-						<dd>
-							<ul>
-								<li><a
-									href="https://mh.dgmps.com/index.php?m=yp&c=business&a=register&siteid=1">免费加盟</a></li>
-								<li><a
-									href="https://mh.dgmps.com/index.php?m=yp&c=business&a=company">商家信息</a></li>
-								<li><a
-									href="https://mh.dgmps.com/index.php?m=yp&c=business&a=company&action=logo">商家设置</a></li>
-								<li><a
-									href="https://mh.dgmps.com/index.php?m=yp&c=business&a=content&action=list&modelid=30">招聘管理</a></li>
-								<li><a
-									href="https://mh.dgmps.com/index.php?m=yp&c=business&a=guestbook&status=0">留言管理</a></li>
-								<li><a
-									href="https://mh.dgmps.com/index.php?m=yp&c=business&a=pay">订单管理</a>
-									</dt>
-							</ul>
-						</dd>
-					</dl>
-					<dl class="xian"></dl>
-					<dl class="long">
-						<dt>
-							<a href="javascript:void(0);">快速发布</a><i></i>
-						</dt>
-						<dd>
-							<p>
-								<a
-									href="https://mh.dgmps.com/index.php?m=member&c=content&a=info_publish&siteid=1"
-									target="_blank">分类信息</a>
-							</p>
-							<p>
-								<a
-									href="https://mh.dgmps.com/index.php?m=member&c=content&a=publish&siteid=1"
-									target="_blank">新闻投稿</a>
-							</p>
-							<p>
-								<a
-									href="https://mh.dgmps.com/index.php?m=member&c=content&a=publish&catid=73&siteid=1"
-									target="_blank">求职简历</a>
-							</p>
-							<p>
-								<a
-									href="https://mh.dgmps.com/index.php?m=yp&c=business&a=content&action=add&modelid=30&siteid=1"
-									target="_blank">招聘信息</a>
-							</p>
-							<p>
-								<a
-									href="https://mh.dgmps.com/index.php?m=yp&c=business&a=content&action=add&modelid=28&siteid=1"
-									target="_blank">发布商品</a>
-							</p>
-							<p>
-								<a
-									href="https://mh.dgmps.com/index.php?m=member&c=content&a=publish&catid=81&siteid=1"
-									target="_blank">房屋出租</a>
-							</p>
-							<p>
-								<a
-									href="https://mh.dgmps.com/index.php?m=member&c=content&a=publish&catid=82&siteid=1"
-									target="_blank">房屋出售</a>
-							</p>
-						</dd>
-					</dl>
-					<dl class="xian"></dl>
-					<dl class="long">
-						<dt>
-							<a href="javascript:void(0);">网站导航</a><i></i>
-						</dt>
-						<dd>
-							<ul>
-								<li><a href="https://mh.dgmps.com/shop/" target="_self"
-									class="bold0">网购商城</a></li>
-								<li><a href="https://mh.dgmps.com/photo/" target="_blank">图片频道</a></li>
-								<li><a href="https://mh.dgmps.com/video/" target="_blank">视频频道</a></li>
-								<li><a href="https://mh.dgmps.com/360/" target="_blank">全景频道</a></li>
-								<li><a href="https://mh.dgmps.com/index.php?m=baozhi"
-									target="_blank">电子报刊</a></li>
-								<li><a href="https://mh.dgmps.com/index.php?m=map"
-									target="_blank">地图频道</a></li>
-								<li><a href="https://mh.dgmps.com/help/" target="_blank">帮助中心</a></li>
-								<li><a href="https://mh.dgmps.com/bbs/" target="_blank">生活社区</a></li>
-							</ul>
-						</dd>
-					</dl>
-				</div>
-			</div>
-		</div>
+		<!-- top -->
+		[#include "../include/top.html"/]
+		
 		<!--header-->
-		<div class="header w-1200 clearfix">
-			<div class="logo fl">
-				<a href="https://mh.dgmps.com/"><img
-					src="/${res}/picture/logo.gif" alt="" /></a>
-			</div>
-			<div class="search fl">
-				<form id="searchform1" name="searchform1" method="get"
-					target="_blank" action="https://mh.dgmps.com/index.php">
-					<input type="hidden" name="m" value="search" /> <input
-						type="hidden" name="c" value="index" /> <input type="hidden"
-						name="a" value="init" /> <input type="hidden" name="siteid"
-						value="1" id="siteid" /> <input type="hidden" id="keyword_c"
-						name="typeid" value="2" />
-					<div class="nav_bbs" id="nav">
-						<p class="set">信息</p>
-						<ul class="keyword_new">
-							<li data-val="1">资讯</li>
-							<li data-val="2">信息</li>
-							<li data-val="54">招聘</li>
-							<li data-val="55">商品</li>
-							<li data-val="56">视频</li>
-							<li data-val="3">图片</li>
-						</ul>
-					</div>
-					<input type="text" name="q" class="search_text"
-						placeholder="请输入关键字" /> <input type="submit" value="搜索"
-						class="search_sub" />
-				</form>
-			</div>
-			<a
-				href="https://mh.dgmps.com/index.php?m=member&c=content&a=info_publish&siteid=1"
-				target="_blank" class="hea_bot">免费发布信息</a>
-		</div>
-		<!--nav-->
-		<div class="navWrap clearfix">
-			<div class="nav w-1200" id="channel_nav">
-				<ul>
-					<li><a href="https://mh.dgmps.com" target="_self"
-						class="bold0">首页</a></li>
-					<li><a href="https://mh.dgmps.com/info/" target="_self"
-						class="bold0">供求</a></li>
-					<li><a href="https://mh.dgmps.com/house/" target="_self"
-						class="bold0">房产</a></li>
-					<li><a href="https://mh.dgmps.com/job/" target="_self"
-						class="bold0">招聘</a></li>
-					<li><a href="https://mh.dgmps.com/shop/" target="_self"
-						class="bold0">商城</a></li>
-					<li><a href="https://mh.dgmps.com/kd.html" target="_self"
-						class="bold0">外卖</a></li>
-					<li><a href="https://mh.dgmps.com/company.html" target="_self"
-						class="bold0">店铺</a></li>
-					<li><a href="https://mh.dgmps.com/news/" target="_self"
-						class="bold0">资讯</a></li>
-					<li><a href="https://mh.dgmps.com/index.php?m=activity"
-						target="_self" class="bold0">活动</a></li>
-					<li><a href="https://mh.dgmps.com/life/" target="_self"
-						class="bold0">黄页</a></li>
-					<li><a href="https://mh.dgmps.com/zhuangxiu/" target="_blank"
-						class="bold0">装修</a></li>
-					<li><a href="https://mh.dgmps.com/index.php?m=ask"
-						target="_blank" class="bold0">问吧</a></li>
-				</ul>
-			</div>
-		</div>
+		[#include "../include/header.html"/]
+		
+		
 		<div class="content w-1200 clearfix">
 			<!--<div class="breadcrumb">您当前的位置：<a href="https://mh.dgmps.com">首页</a> > <a href="https://mh.dgmps.com/info/">分类信息</a> > </div>-->
 			<div class="breadcrumb">
