@@ -496,7 +496,7 @@ $.fn.showMore2 = function(){
 	});
 }
 $.returnTop=function(node){
-	var node = $('<a href="#" alt="���ض���" id="returnTop">���ض���</a>');
+	var node = $('<a href="#" alt="返回顶端" id="returnTop">返回顶端</a>');
 	$(document).ready(function(){$('body').append(node)});
 	var b = node.click(function(event){
 		event.preventDefault();
