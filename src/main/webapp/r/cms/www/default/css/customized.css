@@ -57,8 +57,11 @@
 
 
 
-
+/*会员中心，辅助*/
 .clearfix:after{visibility:hidden;display:block;font-size:0;content:".";clear:both;height:0}
+.dis{display:block;margin:0px;padding:0;}
+.undis{display:none;margin:0px;padding:0;}
+.m-sj{width:4px; height:4px; background:url(../images/m-sj.png) no-repeat; position:absolute; right:265px; top:269px; z-index:4;}
 /*会员中心*/
 .member-con{width:1200px; margin:0 auto; padding-top:18px;}
 .m-pos{color:#999999; font-size:14px;}
